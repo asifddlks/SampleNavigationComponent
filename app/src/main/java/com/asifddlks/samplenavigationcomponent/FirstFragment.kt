@@ -29,7 +29,8 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<TextView>(R.id.textView).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.secondFragment)
+            //Navigation.findNavController(view).navigate(R.id.secondFragment)
+            Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment)
         }
     }
 }
